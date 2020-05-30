@@ -1,0 +1,26 @@
+base_url = "https://twistoy.com"
+title = "Blog"
+compile_sass = true
+highlight_code = true
+highlight_theme = "monokai"
+build_search_index = false
+generate_feed = true
+
+theme = "zola-theme-mikoto"
+taxonomies = [
+  {name = "categories", rss = true},
+  {name = "tags", rss = true},
+]
+
+[extra]
+favicon = "https://avatars.githubusercontent.com/u/6359934"
+author = "Hawtian Wang"
+mikoto_title = "Blog"
+mikoto_menu = [
+    {url = "$BASE_URL", name = "Home"},
+    {url = "$BASE_URL/categories", name = "Categories"},
+    {url = "$BASE_URL/tags", name = "Tags"},
+    {url = "$BASE_URL/atom.xml", name = "Rss"},
+    {url = "$BASE_URL/about", name = "About"},
+]
+
