@@ -13,6 +13,6 @@ jobs:
       - name: Deploy
         run: ./deploy.sh
         env:
-          PAGES_BRANCH: gh-pages
+          PAGES_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           PAGES_REPOSITORY: TwIStOy/twistoy.github.io
