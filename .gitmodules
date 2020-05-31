@@ -1,6 +1,3 @@
 [submodule "themes/zola-theme-mikoto"]
 	path = themes/zola-theme-mikoto
 	url = git@github.com:TwIStOy/zola-theme-mikoto.git
-[submodule "public"]
-	path = public
-	url = git@github.com:TwIStOy/twistoy.github.io.git
