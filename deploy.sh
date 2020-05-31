@@ -29,6 +29,7 @@ main() {
   remote_repo="https://${GITHUB_TOKEN}@github.com/${PAGES_REPOSITORY}.git"
   remote_branch=$PAGES_BRANCH
 
+  git commit -m "Deploy..."
   git push --force "${remote_repo}" master:${remote_branch}
 }
 
