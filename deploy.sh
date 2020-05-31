@@ -18,6 +18,8 @@ main() {
 
   cd public
 
+  ls
+
   git init
   git config user.name "GitHub Actions"
   git config user.email "github-actions-bot@users.noreply.github.com"
