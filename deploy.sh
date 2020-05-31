@@ -19,11 +19,12 @@ main() {
   cd public
 
   ls
+  echo "twistoy.com" >> CNAME
 
   git init
   git config user.name "GitHub Actions"
   git config user.email "github-actions-bot@users.noreply.github.com"
-  git add .
+  git add --all
 
   remote_repo="https://${GITHUB_TOKEN}@github.com/${PAGES_REPOSITORY}.git"
   remote_branch=$PAGES_BRANCH
