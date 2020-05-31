@@ -1,0 +1,22 @@
+name: Deploy
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Install Zola Environments
+        run: wget -q -O - \
+"https://github.com/getzola/zola/releases/download/v0.11.0/zola-v0.11.0-x86_64-unknown-linux-gnu.tar.gz" \
+| tar xzf - -C /usr/local/bin
+      - name: Build Zola Pages
+        run: zola build
+      - name: Deploy
+        run: ./deploy.sh
+        env:
+          PAGES_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          PAGES_REPOSITORY: TwIStOy/twistoy.github.io
