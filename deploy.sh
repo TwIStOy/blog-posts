@@ -11,10 +11,10 @@ fi
 main() {
   git submodule update --init --recursive
 
-  version=$(zola --version)
+  version=$(/tmp/zola --version)
   echo "Using $version"
 
-  zola build
+  /tmp/zola build
 
   cd public
 
