@@ -121,9 +121,9 @@ __ARG_N(a, b, c, 5, 4, 3, 2, 1, 0)  // 2：展开1
 ```c++
 assert(__GET_ARG_COUNT(a,), 1);
 assert(__GET_ARG_COUNT(a, b), 2);
-assert(__GET_ARG_COUNT(a, b, c, d), 3);
-assert(__GET_ARG_COUNT(a, b, c, d, e), 4);
-assert(__GET_ARG_COUNT(a, b, c, d, e, f), 5);
+assert(__GET_ARG_COUNT(a, b, c), 3);
+assert(__GET_ARG_COUNT(a, b, c, d), 4);
+assert(__GET_ARG_COUNT(a, b, c, d, e), 5);
 ```
 通过扩展宏`__RSEQ_N()`和宏`__ARG_N`来扩展其所支持的参数个数。简单的增加宏里的参数个数和数值即可。
 ### 构造字符串序列
