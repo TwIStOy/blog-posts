@@ -1,5 +1,5 @@
 base_url = "https://twistoy.com"
-title = "大地的炼金工房"
+title = "Atelier TwIStOy"
 compile_sass = true
 highlight_code = true
 highlight_theme = "monokai"
@@ -15,7 +15,7 @@ taxonomies = [
 [extra]
 favicon = "https://avatars.githubusercontent.com/u/6359934"
 author = "Hawtian Wang"
-mikoto_title = "大地的炼金工房"
+mikoto_title = "Atelier TwIStOy"
 mikoto_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
