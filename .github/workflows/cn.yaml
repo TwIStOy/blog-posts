@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Find and Replace
-        use: jacobtomlinson/gha-find-replace@0.1.2
+        uses: jacobtomlinson/gha-find-replace@0.1.2
         with:
           include: config.toml
           find: twistoy.com
