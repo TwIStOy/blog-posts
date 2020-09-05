@@ -17,7 +17,7 @@ jobs:
       - name: Install Zola Environments
         run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
       - name: Deploy
-        run: ./deploy.sh
+        run: ./deploy_cn.sh
         env:
           PAGES_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
