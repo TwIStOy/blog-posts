@@ -38,4 +38,7 @@ hermit_social = [
 name = "Hawtian Wang"
 email = "twistoy.wang@gmail.com"
 
+[extra.google_analytics]
+enable = true
+id = "UA-87286014-1"
 
