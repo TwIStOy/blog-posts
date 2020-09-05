@@ -16,3 +16,10 @@ jobs:
           PAGES_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           PAGES_REPOSITORY: TwIStOy/twistoy.github.io
+      - name: SSH Server Deploy
+        uses: kostya-ten/ssh-server-deploy@v3
+        with:
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          scp_source: ./public
+          scp_target: /var/www/html/blog
