@@ -7,7 +7,8 @@ highlight_theme = "agola-dark"
 
 build_search_index = false
 
-generate_rss = true
+generate_feed = true
+feed_filename = "rss.xml"
 
 theme = "hermit_zola"
 taxonomies = [
@@ -23,8 +24,8 @@ home_subtitle = "Atelier TwIStOy"
 
 hermit_menu = [
     { link = "/posts", name = "Posts" },
-    { link = "/tags", name = "Tags" },
-    { link = "/atom.xml", name = "Rss" },
+    { link = "/tags", name = "TAGS" },
+    { link = "/rss.xml", name = "RSS" },
     { link = "/about", name = "About" },
 ]
 
