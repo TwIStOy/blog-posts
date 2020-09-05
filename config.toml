@@ -1,26 +1,41 @@
 base_url = "https://twistoy.com"
-title = "Atelier TwIStOy"
+title = "核桃的炼金工坊"
 compile_sass = true
-highlight_code = true
-highlight_theme = "monokai"
-build_search_index = false
-generate_feed = true
 
-theme = "zola-theme-mikoto"
+highlight_code = true
+highlight_theme = "agola-dark"
+
+build_search_index = false
+
+generate_rss = true
+
+theme = "hermit_zola"
 taxonomies = [
-  {name = "categories", rss = true},
   {name = "tags", rss = true},
 ]
 
 [extra]
 favicon = "https://avatars.githubusercontent.com/u/6359934"
+toc = true
+
 author = "Hawtian Wang"
-mikoto_title = "Atelier TwIStOy"
-mikoto_menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "$BASE_URL/atom.xml", name = "Rss"},
-    {url = "$BASE_URL/about", name = "About"},
+home_subtitle = "Atelier TwIStOy"
+
+hermit_menu = [
+    { link = "/posts", name = "Posts" },
+    { link = "/tags", name = "Tags" },
+    { link = "/atom.xml", name = "Rss" },
+    { link = "/about", name = "About" },
 ]
+
+hermit_social = [
+    { name = "twitter", link = "https://twitter.com/hawtian_wang" },
+    { name = "github", link = "https://github.com/TwIStOy" },
+    { name = "email", link = "mailto:twistoy.wang@gmail.com" }
+]
+
+[extra.author]
+name = "Hawtian Wang"
+email = "twistoy.wang@gmail.com"
+
 
