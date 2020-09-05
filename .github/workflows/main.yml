@@ -19,6 +19,7 @@ jobs:
       - name: SSH Server Deploy
         uses: kostya-ten/ssh-server-deploy@v3
         with:
+          host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           scp_source: ./public
