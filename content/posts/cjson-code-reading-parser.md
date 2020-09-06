@@ -7,9 +7,12 @@ slug = "cjson-code-reading-parser"
 tags = [ "c++", "reading", "parser" ]
 +++
 
-<div class="article_content" id="article_contents_inner_4362677854" dir="ltr">
-						<pre style="max-width: 1241px; overflow: auto;"><code>static const char *skip(const char *in) {while (in &amp;&amp; *in &amp;&amp; (unsigned char)*in&lt;=32) in++; return in;}
-</code></pre>
+```c++
+static const char *skip(const char *in) {
+  while (in && *in && (unsigned char)*in<=32) in++;
+  return in;
+}
+```
 
 <p>跳过<strong>空白字符</strong>。空白字符即ASCII小于等于32的字符。（我还特意查了ascii的表…）。<em>这里我可能会用isspace（掩面逃…）</em></p>
 

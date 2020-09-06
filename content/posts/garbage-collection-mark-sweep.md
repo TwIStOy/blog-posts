@@ -30,6 +30,7 @@ tags = [ 'reading', 'garbage collection', ]
 2. 清扫器必须能够遍历堆中的每一个对象，不管是否存在一定用于对齐的字节，`sweep`方法必能够准确的找到下一个对象。
 
 <center>Mark-Sweep: Allocate</center>
+
 ```
 New():
 	ref <- allocate()
@@ -45,6 +46,7 @@ atomic collect():
 ```
 
 <center>Mark-Sweep: Mark</center>
+
 ```
 markFromRoots():
 	initialise(work_list)
@@ -69,6 +71,7 @@ mark():
 ```
 
 <center>Mark-Sweep: Sweep</center>
+
 ```
 sweep(start, end):
 	scan <- start
@@ -83,6 +86,7 @@ sweep(start, end):
 #### 2.4 Bitmap marking
 - 可以应用于保守式回收器（conservative collector）。
 - 减少回收过程中的换页次数。
+
 ```
 mark():
 	cur <- nextInBitmap()
@@ -101,6 +105,7 @@ markStep(start):
 				if child < start:
 					add(work_list, child)
 ```
+
 #### 2.5 Lazy sweeping
 <ul>
 <li>优化清扫阶段高速缓存行为的一种方案是使用对象预取。回收器可以按照固定步幅对大小相同的对象进行清扫。</li>
@@ -114,6 +119,7 @@ markStep(start):
 
 
 <center>Block structure heep: lazy sweeping</center>
+
 ```
 atomic collect():
 	markFromRoots()
@@ -148,6 +154,7 @@ allocSlow(sz):
 #### 2.6 Cache misses in the marking loop
 
 <center>mark procedure base on FIFO prefetch buffer</center>
+
 ```
 add(work_list, item):
 	markStack <- getStack(work_list)
@@ -162,6 +169,7 @@ remove(work_list):
 	return remove(fifo)
 ```
 <center>Mark edge not node in object graph</center>
+
 ```
 mark():
 	while not isEmpty(work_list):

@@ -86,5 +86,3 @@ def staff():
     people.__bases__ += tuple(bases)
     return people
 </code></pre>
-					<div style="clear:both;">
-					</div>

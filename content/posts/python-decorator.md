@@ -275,5 +275,3 @@ class A:
     def spam(self):
         pass
 </code></pre>
-					<div style="clear:both;">
-					</div>

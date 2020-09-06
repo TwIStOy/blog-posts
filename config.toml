@@ -21,6 +21,7 @@ toc = true
 
 author = "Hawtian Wang"
 home_subtitle = "Atelier TwIStOy"
+footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 hermit_menu = [
     { link = "/posts", name = "Posts" },

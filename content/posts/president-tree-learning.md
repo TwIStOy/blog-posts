@@ -159,5 +159,3 @@ int main() {
     return 0;
 }
 </code></pre>
-					<div style="clear:both;">
-					</div>
