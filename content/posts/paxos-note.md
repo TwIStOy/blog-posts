@@ -47,7 +47,7 @@ $$Max(b, p,\beta)=max\\{v \in Votes(\beta):(v_{pst}=p)\land(v_{bal}<b)\\}\cup\\{
 $$ ((B\_{qrm} \subseteq B\_{vot})\land(B'\_{bal}>B\_{bal})) \implies (B'\_{dec}=B\_{dec}) $$
 
 ### Proof
-定义集合 $\Phi(B, \beta)$: $\Phi(B, \beta) \triangleq \\{B'\in \beta:(B'\_{bal}>B\_{bal})\land(B'\_{dec}\ne B\_{dec}) \\}$，表示 $\beta$ 中编号比 $B$ 大并且表决内容不相同的表决的集合。
+定义集合 $\Phi(B, \beta)$: $\Phi(B, \beta) \triangleq \\{B'\in \beta:(B'\_{bal}>B\_{bal})\land(B'\_{dec}\ne B\_{dec}) \\}$，表示 $\beta$ 中编号比 $B$ 大并且表决内容不相同的表决的集合。
 1. $ C = min\\{B':B'\in \Phi(B, \beta)\\} $
 2. $ C\_{bal} < B\_{bal} $
 3. $ C\_{qrm} \cap B\_{bot} \ne \emptyset $
