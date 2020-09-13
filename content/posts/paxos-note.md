@@ -47,8 +47,8 @@ $$Max(b, p,\beta)=max\\{v \in Votes(\beta):(v_{pst}=p)\land(v_{bal}<b)\\}\cup\\{
 $$ ((B\_{qrm} \subseteq B\_{vot})\land(B'\_{bal}>B\_{bal})) \implies (B'\_{dec}=B\_{dec}) $$
 
 ### Proof
-定义集合 $\Psi(B, \beta)$: $\Psi(B, \beta) \triangleq \\{B'\in \beta:(B'\_{bal}>B\_{bal})\land(B'\_{dec}\ne B\_{dec}) \\}$，表示 $\beta$ 中编号比 $B$ 大并且表决内容不相同的表决的集合。
-1. $ C = min\\{B':B'\in \Psi(B, \beta)\\} $
+定义集合 $\Phi(B, \beta)$: $\Phi(B, \beta) \triangleq \\{B'\in \beta:(B'\_{bal}>B\_{bal})\land(B'\_{dec}\ne B\_{dec}) \\}$，表示 $\beta$ 中编号比 $B$ 大并且表决内容不相同的表决的集合。
+1. $ C = min\\{B':B'\in \Phi(B, \beta)\\} $
 2. $ C\_{bal} < B\_{bal} $
 3. $ C\_{qrm} \cap B\_{bot} \ne \emptyset $
     因为 $B2$ 和 假设中的 $B$ 表决是成功的，也就是 $ B\_{qrm} \subseteq B\_{vot} $
@@ -58,7 +58,7 @@ $$ ((B\_{qrm} \subseteq B\_{vot})\land(B'\_{bal}>B\_{bal})) \implies (B'\_{dec}=
 2. $ MaxVote(C\_{bal}, C\_{qrm}, \beta)\_{dec} = C\_{dec} $
 3. $ MaxVote(C\_{bal}, C\_{qrm}, \beta)\_{dec} \ne B\_{dec} $
 4. $ MaxVote(C\_{bal}, C\_{qrm}, \beta)\_{bal} > B\_{bal} $
-5. $ MaxVote(C\_{bal}, C\_{qrm}, \beta) \in Votes(\Psi(B, \beta)) $
+5. $ MaxVote(C\_{bal}, C\_{qrm}, \beta) \in Votes(\Phi(B, \beta)) $
 6. $ MaxVote(C\_{bal}, C\_{qrm}, \beta)\_{bal} < C\_{bal} $
 7. 9, 10 和 1 矛盾。
 
