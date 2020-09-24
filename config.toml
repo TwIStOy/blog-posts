@@ -36,6 +36,8 @@ hermit_social = [
     { name = "email", link = "mailto:twistoy.wang@gmail.com" }
 ]
 
+icp_enabled = false
+
 [extra.author]
 name = "Hawtian Wang"
 email = "twistoy.wang@gmail.com"
@@ -43,4 +45,7 @@ email = "twistoy.wang@gmail.com"
 [extra.google_analytics]
 enable = true
 id = "UA-87286014-1"
+
+[extra.icp]
+id = "黑 ICP 备 2020005142 号"
 

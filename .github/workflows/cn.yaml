@@ -14,6 +14,12 @@ jobs:
           include: config.toml
           find: twistoy.com
           replace: twistoy.cn
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@0.1.2
+        with:
+          include: config.toml
+          find: icp_enabled = false
+          replace: icp_enabled = true
       - name: Install Zola Environments
         run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
       - name: Deploy
