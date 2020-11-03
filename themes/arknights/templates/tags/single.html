@@ -1,0 +1,65 @@
+{% extends "includes/layout.html" %}
+{% import "macros.html" as post_macros %}
+
+{% block article %}
+
+<div id="archive-flex">
+  <div id="Archives">
+    <h1>Tag: {{ term.name }}</h1>
+    <div id="Archives-bg">
+      {% for page in term.pages %}
+      <time datetime={{ page.date }}>{{ page.date | date(format="%b %d, %Y") }}</time>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+      <br class="clear">
+      {% endfor %}
+    </div>
+  </div>
+  <div id="archive-aside">
+    <div id="Categories">
+      <h1>Categories</h1>
+      {% set_global categories = [] %}
+      {% for page in term.pages | filter(attribute="draft", value=false) %}
+        {% if "categories" in page.taxonomies %}
+          {% set_global categories = categories | concat(with=page.taxonomies.categories) | unique %}
+        {% endif %}
+      {% endfor %}
+      {% if categories | length > 0 %}
+        <ul class="category-list">
+          {% for category in categories %}
+            <li class="category-list-item">
+              <a class="category-list-link" href="{{ get_taxonomy_url(kind="categories", name=category) }}">#{{ category }}#</a>
+              <span class="category-list-count">{{ post_macros::count_key_value(posts=term.pages, key="categories", value=category) }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>None.</p>
+      {% endif %}
+    </div>
+    <div id="Tags">
+      <h1>Tags</h1>
+      {% set_global tags = [] %}
+      {% for page in term.pages | filter(attribute="draft", value=false) %}
+        {% if "tags" in page.taxonomies %}
+          {% set_global tags = tags | concat(with=page.taxonomies.tags) | unique %}
+        {% endif %}
+      {% endfor %}
+
+      {% if tags | length > 0 %}
+        <ul class="tag-list" itemprop="keywords">
+          {% for tag in tags %}
+            <li class="tag-list-item">
+              <a class="tag-list-link" href="{{ get_taxonomy_url(kind="tags", name=tag) }}" rel="tag">{{ tag }}</a>
+              <span class="tag-list-count">{{ post_macros::count_key_value(posts=term.pages, key="tags", value=tag) }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+      <p>None.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

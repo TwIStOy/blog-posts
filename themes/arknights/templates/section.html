@@ -1,0 +1,45 @@
+{% extends "includes/layout.html" %}
+
+{% block article %}
+
+{% if section.pages | length > 0 %}
+{% for page in section.pages | filter(attribute="draft", value=false) %}
+
+<a href="{{ page.permalink }}" class="recent-posts">
+  <div class="recent-info">
+    {% for k, v in page.taxonomies %}
+      <span class="{{k}}">
+        {% if v | length > 0 %}
+          {% for t in v %}
+            <span><a href="{{t}}">{{t}}</a></span>
+          {% endfor %}
+        {% else %}
+          <span>NO {{ k | upper }}</span>
+        {% endif %}
+      </span>
+    {% endfor %}
+    <time datetime="{{ page.date }}">{{ page.date | date(format="%b %d, %Y") }}</time>
+  </div>
+  <h1 class="recent-title">
+    <a href="{{ page.permalink }}">
+      {{ page.title }}
+    </a>
+  </h1>
+  <div class="recent-excerpt">
+    {# {{ page.content | truncate(length=200) }} #}
+    {% if page.summary %}
+      {{ page.summary | safe }}
+    {% else %}
+      {{ page.content | safe }}
+    {% endif %}
+  </div>
+  <a href="{{ page.permalink }}">
+    <span class="read-more">READ MORE +</span>
+  </a>
+</a>
+
+{% endfor %}
+{% endif %}
+
+{% endblock article %}
+

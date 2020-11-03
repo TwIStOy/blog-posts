@@ -1,0 +1,55 @@
+{% extends "includes/layout.html" %}
+{% import "macros.html" as post_macro %}
+
+{% block article %}
+
+<div id="post-bg">
+  <div id="post-title">
+    <div id="post-info">
+      {% if page.date %}
+      <span>date: <time datetime="{{ page.date }}" id="date">{{ page.date | date(format="%b %d, %Y") }}</time></span>
+      {% endif %}
+      {% if page.updated %}
+      <span>updated: <time datetime="{{ page.updated }}" id="updated">{{ page.updated | date(format="%b %d, %Y") }}</time></span>
+      {% endif %}
+    </div>
+    <h1>{{ page.title }}</h1>
+    <hr />
+  </div>
+  <div id="post-content">
+    {{ page.content | safe }}
+  </div>
+  <div id="post-footer">
+    {% if page.later or page.earlier %}
+      <hr />
+    {% endif %}
+    {% if page.earlier %}
+    <a href="{{ page.earlier.permalink }}">{{ "<- " ~ page.earlier.title }}</a>
+    {% endif %}
+    {% if page.later and page.earlier  %}
+    <span style="color: #fe2"> | </span>
+    {% endif %}
+    {% if page.later %}
+    <a href="{{ page.later.permalink }}"> {{ page.later.title ~ " ->" }} </a>
+    {% endif %}
+    {% if page.later or page.earlier %}
+      <hr />
+    {% endif %}
+  </div>
+  <div id="bottom-btn">
+    <a id="to-index" href="#post-index" title="index">≡</a>
+    <a id="to-top" href="#post-title" title="to top">∧</a>
+  </div>
+</div>
+{% endblock article %}
+
+{% block aside %}
+{% if page.toc | length > 0 %}
+<h1>INDEX</h1>
+<div id="post-index">
+  {{ post_macro::post_toc(headers=page.toc, pre_id="", cls="toc", indent="") }}
+</div>
+{% endif %}
+{% endblock aside %}
+
+

@@ -1,0 +1,27 @@
+{% macro post_toc(headers, pre_id, cls, indent) %}
+{% if headers | length > 0 %}
+<ol class="{{ cls }}">
+{% for header in headers %}
+<li class="toc-item toc-level-{{ header.level }}">
+  <a class="toc-link" href="{{ header.permalink }}">
+    <span class="toc-number">{{indent}}{{ pre_id }}{{ loop.index }}.</span>
+    <span class="toc-text">{{indent}}{{ header.title }}</span>
+  </a>
+  {{ self::post_toc(headers=header.children, pre_id=pre_id ~ loop.index ~ ".", cls="toc-child", indent=indent~" ") }}
+</li>
+{% endfor %}
+</ol>
+{% endif %}
+{% endmacro %}
+
+{% macro count_key_value(posts, key, value) %}
+{% set_global count = 0 %}
+{% for post in posts | filter(attribute="draft", value=false)%}
+  {% if key in post.taxonomies %}
+    {% if value in post.taxonomies[key] %}
+      {% set_global count = count + 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{{ count }}
+{% endmacro %}
