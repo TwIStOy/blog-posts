@@ -3,6 +3,7 @@ title = "User-defined conversion and Copy elision"
 date = 2019-04-19
 slug = "user-defined-conversion-and-copy-elision"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",

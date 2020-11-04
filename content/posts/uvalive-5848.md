@@ -4,6 +4,7 @@ slug = "uvalive-5848"
 title = "UVALive 5848. Soju"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [ "acm", "uvalive" ]
 +++
 

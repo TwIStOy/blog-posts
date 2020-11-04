@@ -3,6 +3,7 @@ title = "在C++17中的部分新特性"
 date = 2018-02-25
 slug = "changes-in-cpp-17"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++17",

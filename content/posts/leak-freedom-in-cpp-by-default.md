@@ -3,6 +3,7 @@ title =  "使用智能指针的默认行为来避免内存泄漏"
 date = 2017-07-02
 slug = "leak-freedom-in-cpp-by-default"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "unique_ptr",

@@ -4,6 +4,7 @@ date = 2020-05-14
 slug = "black-magic-of-private-backdoor"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [ "c++", "black-magic", "backdoor" ]
 +++
 

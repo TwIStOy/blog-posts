@@ -4,6 +4,7 @@ slug = "a-philosophy-of-software-design-note"
 title = "软件设计哲学(NOTE)"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [ "engineering" ]
 +++
 

@@ -3,6 +3,7 @@ date =  2016-08-27
 title = "Garbage Collection: Mark-Sweep"
 slug = "garbage-collection-mark-sweep"
 [taxonomies]
+categories =  ["Post"]
 tags = [ 'reading', 'garbage collection', ]
 +++
 

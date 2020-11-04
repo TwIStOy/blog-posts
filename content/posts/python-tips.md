@@ -3,6 +3,7 @@ title = "Python Tips"
 date = 2015-09-01
 slug = "python-tips"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "python",
   "tips",

@@ -3,6 +3,7 @@ title = "Python元编程 - 在Python中实现重载"
 date = 2017-05-08
 slug = "python-meta-programming-1"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "python",
   "meta-programming",

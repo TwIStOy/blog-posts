@@ -3,6 +3,7 @@ title = "Const Reference of Pointer"
 date = 2018-01-17
 slug = "const-reference-of-pointer"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",

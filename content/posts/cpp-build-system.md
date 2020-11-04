@@ -3,6 +3,7 @@ title = "搞了个 C++ 构建系统"
 date = 2020-09-14
 slug = "cpp-build-system"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "build-system",

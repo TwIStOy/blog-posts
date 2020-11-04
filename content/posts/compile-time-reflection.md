@@ -4,6 +4,7 @@ date = 2018-04-15
 slug = "compile-time-reflection"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",

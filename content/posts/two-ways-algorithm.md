@@ -4,7 +4,7 @@ date = 2016-09-16
 slug = "two-ways-algorithm"
 [taxonomies]
 categories = [
-  "algorith",
+  "Post",
 ]
 tags = [
   "algorithm",

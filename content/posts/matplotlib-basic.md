@@ -3,6 +3,7 @@ title = "matplotlib基础"
 date = 2016-08-16
 slug = "matplotlib-basic"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "python",
   "module",

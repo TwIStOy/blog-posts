@@ -4,6 +4,7 @@ date = 2020-05-24
 slug = "paxos-note"
 
 [taxonomies]
+categories =  ["Post"]
 tags = ["paxos", "distribute-system" ]
 +++
 

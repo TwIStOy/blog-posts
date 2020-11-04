@@ -3,6 +3,7 @@ title = "C++ 中的类型推导"
 date = 2017-02-09
 slug = "cpp11-type-derivation"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "range-base-for",

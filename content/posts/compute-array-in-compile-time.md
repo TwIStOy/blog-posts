@@ -3,6 +3,7 @@ title =  "编译时期计算数组"
 date = 2015-09-01
 slug = "compute-array-in-compile-time"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "template",

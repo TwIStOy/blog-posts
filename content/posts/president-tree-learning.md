@@ -2,6 +2,7 @@
 title = "主席树"
 date = 2015-08-31
 [taxonomies]
+categories =  ["Post"]
 tags = [
     'acm',
     'data structure',
