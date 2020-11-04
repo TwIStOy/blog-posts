@@ -2,8 +2,8 @@ base_url = "https://twistoy.com"
 title = "核桃的炼金工坊"
 compile_sass = true
 
-highlight_code = true
-highlight_theme = "agola-dark"
+# highlight_code = true
+# highlight_theme = "agola-dark"
 
 build_search_index = false
 
