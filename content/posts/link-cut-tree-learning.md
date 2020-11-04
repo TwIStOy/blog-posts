@@ -3,6 +3,7 @@ title = "Link Cut Tree"
 date = 2015-09-01
 slug = "link-cut-tree-learning"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "acm",
   "data structure",
@@ -13,6 +14,8 @@ tags = [
 						<p>动态树（Dynamic Tree Problems）是一类要动态维护森林连通性问题的总称。一般要维护森林中某个点到根结点的某些数据，应该支持一棵树切割成两棵树，或者两棵树合并成一棵树的操作。而解决这一类问题的基础数据结构就是LCT。</p>
 
 <p>整体维护的过程有点类似于树链剖分的维护过程，不过树链剖分里维护的重链由于是静态的，可以用线段树去维护。对于动态的，我们可以用splay来维护。</p>
+
+<!-- more -->
 
 <h2>Structure  </h2>
 

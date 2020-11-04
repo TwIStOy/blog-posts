@@ -3,6 +3,7 @@ slug = 'rust-ownership-system'
 date = 2016-08-31
 title = "Rust Ownership System"
 [taxonomies]
+categories =  ["Post"]
 tags = [
     "rust",
     "ownership system",
@@ -19,6 +20,9 @@ fn main() {
 	let i = 5;
 }
 ```
+
+<!-- more -->
+
 这里的变量 `i` 最后离开了作用域，然后内存被回收。
 
 而在下面这个例子里，变量被析构了两次。

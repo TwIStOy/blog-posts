@@ -3,6 +3,7 @@ title = "Interface in C++"
 date = 2018-08-06
 slug = "interface-in-cpp"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",
@@ -16,6 +17,8 @@ tags = [
 # Interface In C++
 ## 问题提出
 我记得我不止一次提到说，我更喜欢 golang 的泛型设计。一个优秀的泛型系统，我希望是来表示一个方法可以接受什么。应该是一个类似于 concept 的概念。我们都知道，在 C++ 里面，我们更多的使用虚函数来实现这个功能，就像下面这样：
+
+<!-- more -->
 
 ```c++
 struct IPerson {

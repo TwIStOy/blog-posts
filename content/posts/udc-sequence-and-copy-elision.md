@@ -3,6 +3,7 @@ title = "User-defined conversion and Copy elision"
 date = 2019-04-19
 slug = "user-defined-conversion-and-copy-elision"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",
@@ -15,6 +16,8 @@ tags = [
 # 问题的开始
 
 问题的开始是同事聊到了我们笔试题的一个问题，是说下面这个代码其实在编译的时候是有问题的。
+
+<!-- more -->
 
 ```cpp
 struct UserInfo {

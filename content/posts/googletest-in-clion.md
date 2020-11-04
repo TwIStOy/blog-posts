@@ -3,6 +3,7 @@ title = "在 CLion 中配置 gtest"
 date = 2016-11-13
 slug = "gtest-in-clion"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "unittest",
   "cLion",
@@ -25,6 +26,8 @@ tags = [
   + test // test files
   - CMakeLists.txt
 ```
+
+<!-- more -->
 
 这里假定我们把 gtest 放在 `ext` 这个目录下。我们不需要手动的从 github 上下载 gtest，CMake 可以替我们做到这个部分。具体的命令在后面会写到。
 test 目录就是用于存放单元测试文件的地方，这部分的 cpp 文件是不需要写 main 的，在链接的时候，会把 main 函数链接上去。

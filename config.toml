@@ -2,17 +2,18 @@ base_url = "https://twistoy.com"
 title = "核桃的炼金工坊"
 compile_sass = true
 
-highlight_code = true
-highlight_theme = "agola-dark"
+# highlight_code = true
+# highlight_theme = "agola-dark"
 
 build_search_index = false
 
 generate_feed = true
 feed_filename = "rss.xml"
 
-theme = "hermit_zola"
+theme = "arknights"
 taxonomies = [
   {name = "tags", rss = true},
+  {name = "categories", rss = true},
 ]
 
 [extra]
@@ -23,17 +24,13 @@ author = "Hawtian Wang"
 home_subtitle = "Atelier TwIStOy"
 footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
-hermit_menu = [
-    { link = "/posts", name = "POSTS" },
+doctor = "TwIStOy"
+doctor_url = "mailto:hawtian.wang@twistoy.cn"
+menus = [
+    { link = "/categories", name = "CATEGORIES" },
     { link = "/tags", name = "TAGS" },
     { link = "/rss.xml", name = "RSS" },
     { link = "/about", name = "ABOUT" },
-]
-
-hermit_social = [
-    { name = "twitter", link = "https://twitter.com/hawtian_wang" },
-    { name = "github", link = "https://github.com/TwIStOy" },
-    { name = "email", link = "mailto:twistoy.wang@gmail.com" }
 ]
 
 icp_enabled = true

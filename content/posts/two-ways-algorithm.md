@@ -3,6 +3,9 @@ title = "Two Ways Algorithm"
 date = 2016-09-16
 slug = "two-ways-algorithm"
 [taxonomies]
+categories = [
+  "Post",
+]
 tags = [
   "algorithm",
   "string",
@@ -12,6 +15,8 @@ tags = [
 Two Ways Algorithm 是一个用于字符串匹配的算法，算法类似 KMP 会返回所有 pattern 出现在 text 里的位置。但是和 KMP 不同的是 two ways algorithm 只使用常数大小的额外空间。
 
 算法使用 \\(O(m)\\) 的时间预处理，并且可以在 \\(O(n)\\) 时间完成匹配，在最差的情况下会遍历 text 串两次。
+
+<!-- more -->
 
 ## 算法细节
 模式串 \\(x\\) 被分成两个部分，\\(x\_l\\) 和 \\(x\_r\\)。在匹配的过程中先从左向右匹配 \\(x\_r\\)，如果没有失配再从右向左匹配 \\(x\_l\\)。

@@ -3,6 +3,7 @@ title = "在C++17中的部分新特性"
 date = 2018-02-25
 slug = "changes-in-cpp-17"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++17",
@@ -17,6 +18,9 @@ C++17已经发布了有一些时候，并且很多的编译器已经完成了对
 *init-statement* 可以是：
 - 表达式语句（可以是空语句，仅`;`）
 - 声明语句
+
+<!-- more -->
+
 ## Thinking
 if-init 这个 feature 尝试着让我们的代码更可读和干净，并且可以帮助我们更好的控制对象的生命周期。在从前的 `if` 语句中，我们经常会做类似的事情：
 ```c++

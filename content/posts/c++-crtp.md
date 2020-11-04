@@ -4,6 +4,7 @@ date = 2018-10-16
 slug = "compare-between-crtp-and-virtual"
 
 [taxonomies]
+categories =  ["Post"]
 tags = ["c++", "crtp", "virtual"]
 +++
 
@@ -13,6 +14,8 @@ tags = ["c++", "crtp", "virtual"]
 3. 需要在每个对象中维护一个额外的虚函数表
 
 但是在有些情况下，我们就可以用一些静态的类型分发策略来带来一些性能上面的好处。
+
+<!-- more -->
 
 # 一个传统的例子
 ```c++

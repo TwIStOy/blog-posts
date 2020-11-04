@@ -3,6 +3,7 @@ title = "c++11 完美转发+变长参数"
 date = 2015-09-01
 slug = "c++11-perfect-forward"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",
@@ -21,6 +22,8 @@ tags = [
   2. 不能用F的敌方，G也一定不能用。 <br>
   3. 转发的开销应该是线性增长的。</p>
 </blockquote>
+
+<!-- more -->
 
 <p>这里在C++11出现之前，人们做了很多尝试。就出现了很多的替代方案，直到C++11出现之后，才有了一个完美的解决方案。</p>
 

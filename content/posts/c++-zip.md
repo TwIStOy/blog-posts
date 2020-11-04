@@ -3,6 +3,7 @@ date = 2016-04-05
 slug = "zip-implementtation-for-cpp"
 title = "C++ zip实现"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++", "c++11", "template", "zip", "python"
 ]
@@ -13,6 +14,8 @@ tags = [
 在这里记录下来自己对`zip`的简单实现。
 
 主要就用了模板递归，结合了一些`C++11`的新特性完成的。
+
+<!-- more -->
 
 ```c++
 #pragma once

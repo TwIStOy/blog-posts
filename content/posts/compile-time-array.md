@@ -4,6 +4,7 @@ date = 2018-01-07
 slug = "compile-time-const-array"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",
@@ -13,6 +14,8 @@ tags = [
 +++
 
 文中所有的代码均遵循C++11的标准并编译通过。
+
+<!-- more -->
 
 ## `const_array` 的实现
 在 C++11 标准中的使用`constexpr`修饰的函数的要求比较严格，只允许在函数体内有一个`return`语句。那么在这样的限制下，很多的表达式就只能使用递归来完成。

@@ -4,6 +4,7 @@ slug = "2015-duoxiao-contest5-1003"
 title = "2015多校Contest 5. 1003. Hotaru's problem"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [ "acm", "string" ]
 +++
 
@@ -15,6 +16,8 @@ tags = [ "acm", "string" ]
 2. 第一部分和第二部分回文。
 
 求最长的N-sequence的长度。
+
+<!-- more -->
 
 ### 分析
 

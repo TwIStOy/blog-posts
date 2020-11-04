@@ -4,6 +4,7 @@ date = 2020-05-24
 slug = "paxos-note"
 
 [taxonomies]
+categories =  ["Post"]
 tags = ["paxos", "distribute-system" ]
 +++
 
@@ -28,6 +29,8 @@ tags = ["paxos", "distribute-system" ]
     }
     ```
 - 表决的集合 $\beta$
+
+<!-- more -->
 
 ## Define Some Useful functions
 - $Votes(\beta)$：所有在 $\beta$ 中的表决的投票的集合

@@ -3,6 +3,7 @@ title = "Operator new 的重载"
 date = 2015-08-31
 slug = "override-operator-new"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "operator new",
@@ -17,6 +18,8 @@ tags = [
 <li>调用构造函数生成对象。  </li>
 <li>返回相应的指针。</li>
 </ol><p>new的行为是不能被改变的，但是这里的operator new的行为是可以改变的。也就是对operator new的重载。</p>
+
+<!-- more -->
 
 <h3>new 运算符表达式的重载</h3>
 

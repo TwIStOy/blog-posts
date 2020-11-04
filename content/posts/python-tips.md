@@ -3,6 +3,7 @@ title = "Python Tips"
 date = 2015-09-01
 slug = "python-tips"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "python",
   "tips",
@@ -20,6 +21,8 @@ tags = [
     2: "two"
 }.get(x, "error")
 </code></pre>
+
+<!-- more -->
 
 <h3>有关于常量</h3>
 

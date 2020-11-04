@@ -3,6 +3,7 @@ title =  "使用智能指针的默认行为来避免内存泄漏"
 date = 2017-07-02
 slug = "leak-freedom-in-cpp-by-default"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "unique_ptr",
@@ -13,6 +14,8 @@ tags = [
 
 2016年的 cppcon 上，Herb Sutter 的演讲中提出了一些关于常用的数据结构如何使用智能指针自动的构造和析构来避免内存泄漏的情况发生。
 可以在这里找到这个演讲的链接：[https://youtu.be/JfmTagWcqoE](https://youtu.be/JfmTagWcqoE)。
+
+<!-- more -->
 
 ## 智能指针
 ### `unique_ptr`

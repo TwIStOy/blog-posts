@@ -4,6 +4,7 @@ slug = "cpp-template"
 title = "C++ Template"
 
 [taxonomies]
+categories =  ["Post"]
 tags = [ "c++", "template" ]
 +++
 
@@ -15,6 +16,8 @@ tags = [ "c++", "template" ]
 
 1. 实例化之前，先检查模板代码本身，查看语法是否正确。
 2. 在实例化旗舰，检查模板代码，查看是否所有的调用都有效。
+
+<!-- more -->
 
 ## 模板的推导
 

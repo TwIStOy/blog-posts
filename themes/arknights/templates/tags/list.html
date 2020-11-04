@@ -1,0 +1,24 @@
+{% extends "includes/layout.html" %}
+{% import "macros.html" as post_macros %}
+{% import "includes/aside_macros.html" as aside_macros %}
+
+{% block article %}
+
+  <div id="Tags">
+    <h1>Tags</h1>
+    {% if terms | length > 0 %}
+    <ul class="tag-list" itemprop="keywords">
+      {% for tag in terms %}
+      <li class="tag-list-item">
+        <a class="tag-list-link" href="{{ tag.permalink }}" rel="tag">{{ tag.name }}</a>
+        <span class="tag-list-count">{{ tag.pages | length }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>None.</p>
+    {% endif %}
+  </div>
+
+{% endblock %}
+

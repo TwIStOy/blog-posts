@@ -3,6 +3,7 @@ title = "Python 装饰器"
 date = 2015-08-21
 slug = "python-decorator"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "Python",
 ]
@@ -12,6 +13,8 @@ tags = [
 						<p>给函数添加一个包装层以添加额外的处理部分，我们就可以使用装饰器这种方法。</p>
 
 <h6>定义一个装饰器：</h6>
+
+<!-- more -->
 
 <pre style="max-width: 1241px; overflow: auto;"><code>import time
 

@@ -3,6 +3,7 @@ title = "模板实例化对成员函数的要求"
 date = 2015-09-01
 slug = "template-instantiation"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "c++",
   "c++11",
@@ -15,6 +16,8 @@ tags = [
 
 <p>假如想写一个类模板C，能够实例化此模板的类型必须具有一个名为<code>Clone()</code>的<code>const</code>成员函数，此函数不带参数，返回值为指针，指向同类型的对象。 <br>
 就像这样：</p>
+
+<!-- more -->
 
 <pre style="max-width: 1241px; overflow: auto;"><code>template&lt;typename T&gt;
 class C

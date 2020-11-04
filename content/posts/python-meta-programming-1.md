@@ -3,6 +3,7 @@ title = "Python元编程 - 在Python中实现重载"
 date = 2017-05-08
 slug = "python-meta-programming-1"
 [taxonomies]
+categories =  ["Post"]
 tags = [
   "python",
   "meta-programming",
@@ -11,6 +12,8 @@ tags = [
 +++
 
 避免重复的代码，避免复制粘贴一些逻辑的时候，我们使用了函数。那么避免复制粘贴定义一些类似的，或者较为相像的类的时候，我们就需要一个生成类的方法，在Python中，我们使用的方法就是元类（MetaClass）。
+
+<!-- more -->
 
 ## 元编程的应用（1）函数重载
 
