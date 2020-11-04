@@ -5,13 +5,13 @@
 {% block article %}
 
   <div id="Tags">
-    <h1>Tags</h1>
+    <h1>Categories</h1>
     {% if terms | length > 0 %}
-    <ul class="tag-list" itemprop="keywords">
+    <ul class="category-list" itemprop="keywords">
       {% for tag in terms %}
-      <li class="tag-list-item">
-        <a class="tag-list-link" href="{{ tag.permalink }}" rel="tag">{{ tag.name }}</a>
-        <span class="tag-list-count">{{ tag.pages | length }}</span>
+      <li class="category-list-item">
+        <a class="category-list-link" href="{{ tag.permalink }}">{{ tag.name }}</a>
+        <span class="category-list-count">{{ tag.pages | length }}</span>
       </li>
       {% endfor %}
     </ul>

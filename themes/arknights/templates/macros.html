@@ -14,6 +14,16 @@
 {% endif %}
 {% endmacro %}
 
+{% macro count_values(posts, key) %}
+{% set_global values = [] %}
+{% for post in posts | filter(attribute="draft", value=false)%}
+  {% if key in post.taxonomies %}
+    {% set_global values = values | concat(with=post.taxonomies[key]) | unique %}
+  {% endif %}
+{% endfor %}
+{{ values | length }}
+{% endmacro %}
+
 {% macro count_key_value(posts, key, value) %}
 {% set_global count = 0 %}
 {% for post in posts | filter(attribute="draft", value=false)%}
@@ -24,4 +34,12 @@
   {% endif %}
 {% endfor %}
 {{ count }}
+{% endmacro %}
+
+{% macro post_summary(page) %}
+{% if page.summary %}
+  {{ page.summary | safe }}
+{% else %}
+  {{ page.content | safe }}
+{% endif %}
 {% endmacro %}

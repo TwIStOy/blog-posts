@@ -13,6 +13,7 @@ feed_filename = "rss.xml"
 theme = "arknights"
 taxonomies = [
   {name = "tags", rss = true},
+  {name = "categories", rss = true},
 ]
 
 [extra]
@@ -26,7 +27,7 @@ footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/
 doctor = "TwIStOy"
 doctor_url = "mailto:hawtian.wang@twistoy.cn"
 menus = [
-    { link = "/posts", name = "POSTS" },
+    { link = "/categories", name = "CATEGORIES" },
     { link = "/tags", name = "TAGS" },
     { link = "/rss.xml", name = "RSS" },
     { link = "/about", name = "ABOUT" },

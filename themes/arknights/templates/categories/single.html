@@ -6,11 +6,13 @@
 
 <div id="archive-flex">
   <div id="Archives">
-    <h1>Tag: {{ term.name }}</h1>
+    <h1>Category: {{ term.name }}</h1>
     <div id="Archives-bg">
       {% for page in term.pages %}
-      <time datetime={{ page.date }}>{{ page.date | date(format="%b %d, %Y") }}</time>
-      <a href="{{ page.permalink }}">{{ page.title }}</a>
+      <div class="category-item">
+        <time datetime={{ page.date }}>{{ page.date | date(format="%b %d, %Y") }}</time>
+        <a href="{{ page.permalink }}">{{ page.title }}</a>
+      </div>
       <br class="clear">
       {% endfor %}
     </div>
