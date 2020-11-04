@@ -17,6 +17,8 @@ tags = [ "acm", "string" ]
 
 求最长的N-sequence的长度。
 
+<!-- more -->
+
 ### 分析
 
 <p>N-sequence的特征是第一部分和第三部分相同，并且第一部分和第二部分回文。那么条件可以转化成：<strong>第一部分</strong>和<strong>第二部分</strong> <em>回文</em>，并且<strong>第二部分</strong>和<strong>第三部分</strong> <em>回文</em>。那么问题就转化成了：两个回文串的重合问题。</p>

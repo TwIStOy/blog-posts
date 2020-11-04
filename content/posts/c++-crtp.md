@@ -15,6 +15,8 @@ tags = ["c++", "crtp", "virtual"]
 
 但是在有些情况下，我们就可以用一些静态的类型分发策略来带来一些性能上面的好处。
 
+<!-- more -->
+
 # 一个传统的例子
 ```c++
 struct VirtualInterface {

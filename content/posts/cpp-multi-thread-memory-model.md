@@ -24,6 +24,9 @@ void undefined_behaviour_with_double_checked_locking() {
   resource_ptr->do_something(); // 4
 }
 ```
+
+<!-- more -->
+
 在 *C++ Concurrency in Action*  中提到过一段很有意思的代码，这段代码存在潜在的条件竞争。未被锁保护的操作①，没有与另一个线程中被锁保护了的操作③进行同步，在这样的情况下就有可能产生条件竞争。这个操作不光会覆盖指针本身，还有会影响到其指向的对象。所以在后面的操作④就有可能会导致不正确的结果。
 
 # Out-of-order process

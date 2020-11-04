@@ -22,6 +22,8 @@ template<typename T, typename U>
 auto func(T a, U b) -> decltype(a + b);
 ```
 
+<!-- more -->
+
 在 C++14 中，后面的 `decltype` 部分也可以被省略，可以通过返回的表达式来直接推导，比如这样：
 
 ```c++

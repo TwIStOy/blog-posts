@@ -19,6 +19,8 @@ tags = [
 <li>返回相应的指针。</li>
 </ol><p>new的行为是不能被改变的，但是这里的operator new的行为是可以改变的。也就是对operator new的重载。</p>
 
+<!-- more -->
+
 <h3>new 运算符表达式的重载</h3>
 
 <p><strong>operator new</strong>操作符可以被每个类作为成员函数重载，也可以作为全局函数重载。这里应该是推荐作为成员函数重载的。</p>

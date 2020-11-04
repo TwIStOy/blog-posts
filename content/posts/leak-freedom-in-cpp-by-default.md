@@ -15,6 +15,8 @@ tags = [
 2016年的 cppcon 上，Herb Sutter 的演讲中提出了一些关于常用的数据结构如何使用智能指针自动的构造和析构来避免内存泄漏的情况发生。
 可以在这里找到这个演讲的链接：[https://youtu.be/JfmTagWcqoE](https://youtu.be/JfmTagWcqoE)。
 
+<!-- more -->
+
 ## 智能指针
 ### `unique_ptr`
 1. 唯一所有权

@@ -13,6 +13,8 @@ tags = [ 'reading', 'garbage collection', ]
 1. *追踪式回收* 引入 **垃圾** 这一具有明确判定标准的概念，但它不一定包含所有不再使用的对象。
 2. 出于效率原因，某些对象可能不会被回收。
 
+<!-- more -->
+
 #### 1.3 Comparing garbage collection algorithms
 用什么来衡量各种垃圾回收算法的好坏呢：
 

@@ -19,6 +19,8 @@ tags = [
 起源是在群里看到了有人分享的关于一个人用 `vim` 写 `latex` 的文章，但是它的做法是用了一个 `vimtex` 的独立插件。
 我是个 language server 的狂热使用者，所以我就在找一个用 language server 的处理方案。回忆起来另一次在另一个群里看到的，一个叫做 [texlab](https://github.com/latex-lsp/texlab) 的项目，就在 vim 里搞个配合。
 
+<!-- more -->
+
 # vim 里的插件选择
 
 vim 里的 language client 的实现用好几种：

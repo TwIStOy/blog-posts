@@ -14,6 +14,8 @@ tags = [
 # Introduction
 matplotlib是一个很好用的可以画2D图的Python模块。它提供了很方便进行可视化数据的方案。下面是对matplotlib的使用进行了一个简单的记录。
 
+<!-- more -->
+
 # Simple plot
 ```python
 import numpy as np

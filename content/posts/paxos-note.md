@@ -30,6 +30,8 @@ tags = ["paxos", "distribute-system" ]
     ```
 - 表决的集合 $\beta$
 
+<!-- more -->
+
 ## Define Some Useful functions
 - $Votes(\beta)$：所有在 $\beta$ 中的表决的投票的集合
 $$Votes(\beta) = \\{v:(v_{pst}\in B_{vot})\cap(v_{bal}=B_{bal}), B \in \beta\\}$$

@@ -12,6 +12,8 @@ tags = [
 <div class="article_content" id="article_contents_inner_5677460198" dir="ltr">
 						<p>主席树我的理解是可持久化线段树的一种应用吧。本质上就是可持久化线段树，不过我们在查询的时候用到了他们之间可以相减的性质。</p>
 
+<!-- more -->
+
 <p>首先介绍一下可持久化线段树。</p>
 
 <h3>可持久化线段树</h3>

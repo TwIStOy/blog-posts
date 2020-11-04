@@ -14,6 +14,8 @@ tags = [
 
 <h6>定义一个装饰器：</h6>
 
+<!-- more -->
+
 <pre style="max-width: 1241px; overflow: auto;"><code>import time
 
 def timethis(func):

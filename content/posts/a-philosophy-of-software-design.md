@@ -13,6 +13,9 @@ tags = [ "engineering" ]
 A shallow module is one whose interface is complicated relative to the functionality it provides. Shallow modules don’t help much in the
 battle against complexity, because the benefit they provide (not having to learn about how they work internally) is negated by the cost
 of learning and using their interfaces. Small modules tend to be shallow.
+
+<!-- more -->
+
 ## Information Leakage
 Information leakage occurs when the **same knownledge is used in multiple places**, such as two different classed that both understand the
 format of a particular type of file.

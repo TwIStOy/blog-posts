@@ -20,6 +20,9 @@ struct Fuck {
     virtual void shit(const T&) = 0;
 }
 ```
+
+<!-- more -->
+
 `shit`函数接受一个常量引用，当我们使用一个指针类型(`A*`)来实例化这个模板类的时候，函数`shit`的类型就应该是：
 ```c++
 void shit(const T&) = 0; <value T = A*>

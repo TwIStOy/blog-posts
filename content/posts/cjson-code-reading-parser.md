@@ -17,6 +17,8 @@ static const char *skip(const char *in) {
 
 <p>跳过<strong>空白字符</strong>。空白字符即ASCII小于等于32的字符。（我还特意查了ascii的表…）。<em>这里我可能会用isspace（掩面逃…）</em></p>
 
+<!-- more -->
+
 <pre style="max-width: 1241px; overflow: auto;"><code>static const char *parse_value(cJSON *item,const char *value)
 {
     if (!value)                     return 0;
