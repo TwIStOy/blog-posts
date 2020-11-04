@@ -4,10 +4,10 @@
 {% for header in headers %}
 <li class="toc-item toc-level-{{ header.level }}">
   <a class="toc-link" href="{{ header.permalink }}">
-    <span class="toc-number">{{indent}}{{ pre_id }}{{ loop.index }}.</span>
-    <span class="toc-text">{{indent}}{{ header.title }}</span>
+    <span class="toc-number">{{ indent | safe }}{{ pre_id }}{{ loop.index }}.</span>
+    <span class="toc-text"> {{ header.title }}</span>
   </a>
-  {{ self::post_toc(headers=header.children, pre_id=pre_id ~ loop.index ~ ".", cls="toc-child", indent=indent~" ") }}
+  {{ self::post_toc(headers=header.children, pre_id=pre_id ~ loop.index ~ ".", cls="toc-child", indent=indent~"&nbsp;") }}
 </li>
 {% endfor %}
 </ol>

@@ -37,9 +37,39 @@
     {% endif %}
   </div>
   <div id="bottom-btn">
+    {% if page.toc | length > 0 %}
     <a id="to-index" href="#post-index" title="index">≡</a>
+    {% endif %}
     <a id="to-top" href="#post-title" title="to top">∧</a>
   </div>
+  <details id="reward">
+    <summary>
+      <div id="alipay">
+        <span>支付宝 | Alipay</span>
+        <br />
+        <img src="{{ get_url(path="img/alipay.png") }}" />
+      </div>
+      <div id="wechat">
+        <span>微信 | WeChat</span>
+        <br />
+        <img src="{{ get_url(path="img/wechat.png") }}" />
+      </div>
+    </summary>
+  </details>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+          this.page.url = "{{ page.permalink | safe }}";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "{{ page.slug | safe }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+    (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://twistoy-1.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+  </script>
+
 </div>
 {% endblock article %}
 
