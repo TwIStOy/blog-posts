@@ -2,8 +2,8 @@
 
 {% block article %}
 
-{% if section.pages | length > 0 %}
-{% for page in section.pages | filter(attribute="draft", value=false) %}
+{% if paginator.pages | length > 0 %}
+{% for page in paginator.pages | filter(attribute="draft", value=false) %}
 
 <a href="{{ page.permalink }}" class="recent-posts">
   <div class="recent-info">
@@ -40,6 +40,23 @@
 
 {% endfor %}
 {% endif %}
+
+<div id="post-footer">
+  <hr />
+  {% if paginator.previous %}
+  <a href="{{ paginator.previous }}">Previous</a>
+  {% else %}
+  <span>Previous</span>
+  {% endif %}
+  <span style="color: #fe2"> | {{ paginator.current_index }} / {{ paginator.number_pagers }} | </span>
+  {% if paginator.next %}
+  <a href="{{ paginator.next }}">Next</a>
+  {% else %}
+  <span>Next</span>
+  {% endif %}
+  <hr />
+</div>
+
 
 {% endblock article %}
 
