@@ -38,6 +38,8 @@ icp_enabled = true
 [extra.author]
 name = "Hawtian Wang"
 email = "twistoy.wang@gmail.com"
+alipay = "https://i.loli.net/2020/11/11/c6D1GTWvmXJdSRQ.jpg"
+wechat = "https://i.loli.net/2020/11/11/qhp2KXnFMecimDv.jpg"
 
 [extra.google_analytics]
 enable = true
