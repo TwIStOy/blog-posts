@@ -1,4 +1,4 @@
-name: Deploy COM
+name: Deploy CN
 on:
   push:
     branches: [ master ]
@@ -7,12 +7,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Install Zola Environments
         run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
       - name: Deploy
-        run: ./deploy_com.sh
+        run: ./deploy_cn.sh
         env:
           PAGES_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           PAGES_REPOSITORY: TwIStOy/twistoy.github.io
+      - name: Deploy to Tecent CloudBase
+        uses: TencentCloudBase/cloudbase-action@v2.0.1
+        with:
+          envId: ${{ secrets.CLOUDBASEENVID }}
+          secretId: ${{ secrets.CLOUDBASESECRETID }} 
+          secretKey: ${{ secrets.CLOUDBASESECRETKEY }}

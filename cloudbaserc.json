@@ -1,0 +1,19 @@
+{
+    "envId": "{{env.CLOUDBASEENVID}}",
+    "version": "2.0",
+    "framework": {
+      "name": "gh-actions-depoly",
+      "plugins": {
+        "func": {
+          "use": "@cloudbase/framework-plugin-website",
+          "inputs": {
+            "installCommand": "wget -q -O - \"https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz\" | tar xzf - -C /tmp",
+            "buildCommand": "/tmp/zola build",
+            "outputPath": "public",
+            "cloudPath": "/",
+            "ignore": [".git", ".github", "node_modules", "cloudbaserc.js"]  
+          }
+        }
+      }
+    }
+  }
