@@ -42,20 +42,22 @@
     {% endif %}
     <a id="to-top" href="#post-title" title="to top">∧</a>
   </div>
-  <details id="reward">
-    <summary>
-      <div id="alipay">
-        <span>支付宝 | Alipay</span>
-        <br />
-        <img src="{{ config.extra.author.alipay }}" />
-      </div>
-      <div id="wechat">
-        <span>微信 | WeChat</span>
-        <br />
-        <img src="{{  config.extra.author.wechat }}" />
-      </div>
-    </summary>
-  </details>
+  {% comment %}
+   <details id="reward">
+     <summary>
+       <div id="alipay">
+         <span>支付宝 | Alipay</span>
+         <br />
+         <img src="{{ config.extra.author.alipay }}" />
+       </div>
+       <div id="wechat">
+         <span>微信 | WeChat</span>
+         <br />
+         <img src="{{  config.extra.author.wechat }}" />
+       </div>
+     </summary>
+   </details>
+  {% endcomment %}
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
