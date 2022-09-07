@@ -12,12 +12,13 @@ jobs:
           submodules: true
       - name: Install Zola Environments
         run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
-      - name: Deploy
-        run: ./deploy_cn.sh
+      - name: Deploy to github pages
+        uses: shalzz/zola-deploy-action@v0.16.1
         env:
           PAGES_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          PAGES_REPOSITORY: TwIStOy/twistoy.github.io
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY: TwIStOy/twistoy.github.io
       - name: Deploy to Tecent CloudBase
         uses: TencentCloudBase/cloudbase-action@v2.0.1
         with:
