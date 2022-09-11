@@ -4,3 +4,9 @@
 [submodule "themes/simple-dev-blog"]
 	path = themes/simple-dev-blog
 	url = https://github.com/TwIStOy/simple-dev-blog-zola-starter.git
+[submodule "themes/apollo"]
+	path = themes/apollo
+	url = https://github.com/not-matthias/apollo
+[submodule "themes/archie-zola"]
+	path = themes/archie-zola
+	url = https://github.com/XXXMrG/archie-zola.git
