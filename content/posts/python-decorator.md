@@ -3,7 +3,7 @@ title = "Python 装饰器"
 date = 2015-08-21
 slug = "python-decorator"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "Python",
 ]

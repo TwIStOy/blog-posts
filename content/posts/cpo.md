@@ -4,7 +4,7 @@ slug = "cpo"
 title = "Customization Point Object"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "c++", "c++20", "ranges", "cpo", "niebloid" ]
 +++
 

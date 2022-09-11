@@ -4,7 +4,7 @@ slug = "2015-duoxiao-contest5-1003"
 title = "2015多校Contest 5. 1003. Hotaru's problem"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "acm", "string" ]
 +++
 

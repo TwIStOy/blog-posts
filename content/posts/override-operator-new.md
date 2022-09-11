@@ -3,7 +3,7 @@ title = "Operator new 的重载"
 date = 2015-08-31
 slug = "override-operator-new"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "operator new",

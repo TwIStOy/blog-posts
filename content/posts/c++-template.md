@@ -4,7 +4,7 @@ slug = "cpp-template"
 title = "C++ Template"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "c++", "template" ]
 +++
 

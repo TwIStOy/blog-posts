@@ -27,10 +27,11 @@ footer_copyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/
 doctor = "TwIStOy"
 doctor_url = "mailto:hawtian.wang@twistoy.cn"
 menus = [
+    { link = "/", name = "HOME" },
     { link = "/categories", name = "CATEGORIES" },
     { link = "/tags", name = "TAGS" },
-    { link = "/rss.xml", name = "RSS" },
     { link = "/about", name = "ABOUT" },
+    { link = "/rss.xml", name = "RSS" },
 ]
 
 icp_enabled = true

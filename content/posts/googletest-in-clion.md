@@ -3,7 +3,7 @@ title = "在 CLion 中配置 gtest"
 date = 2016-11-13
 slug = "gtest-in-clion"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "unittest",
   "cLion",

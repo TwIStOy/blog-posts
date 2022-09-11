@@ -4,7 +4,7 @@ date = 2018-10-16
 slug = "compare-between-crtp-and-virtual"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = ["c++", "crtp", "virtual"]
 +++
 

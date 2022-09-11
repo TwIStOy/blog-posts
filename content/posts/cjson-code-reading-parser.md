@@ -4,7 +4,7 @@ date = 2015-09-01
 slug = "cjson-code-reading-parser"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "c++", "reading", "parser" ]
 +++
 

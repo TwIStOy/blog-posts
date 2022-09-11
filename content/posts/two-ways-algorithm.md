@@ -3,9 +3,7 @@ title = "Two Ways Algorithm"
 date = 2016-09-16
 slug = "two-ways-algorithm"
 [taxonomies]
-categories = [
-  "Post",
-]
+categories = [ "Tech" ]
 tags = [
   "algorithm",
   "string",

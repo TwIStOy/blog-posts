@@ -3,7 +3,7 @@ slug = 'rust-ownership-system'
 date = 2016-08-31
 title = "Rust Ownership System"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
     "rust",
     "ownership system",

@@ -4,7 +4,7 @@ date = 2019-12-05
 slug = "private-member-function-detect-template-with-sfinae"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "c++", "sfinae" ]
 +++
 

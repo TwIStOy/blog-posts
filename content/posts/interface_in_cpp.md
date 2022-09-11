@@ -3,7 +3,7 @@ title = "Interface in C++"
 date = 2018-08-06
 slug = "interface-in-cpp"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "c++11",

@@ -5,7 +5,7 @@ title = "2015 长春站亚洲区 && 退役总结"
 draft = false
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "acm" ]
 +++
 

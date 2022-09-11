@@ -3,7 +3,7 @@ title = "c++11 完美转发+变长参数"
 date = 2015-09-01
 slug = "c++11-perfect-forward"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "c++11",

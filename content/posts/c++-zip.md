@@ -3,7 +3,7 @@ date = 2016-04-05
 slug = "zip-implementtation-for-cpp"
 title = "C++ zip实现"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++", "c++11", "template", "zip", "python"
 ]

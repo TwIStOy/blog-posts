@@ -3,7 +3,7 @@ title = "Link Cut Tree"
 date = 2015-09-01
 slug = "link-cut-tree-learning"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "acm",
   "data structure",

@@ -4,7 +4,7 @@ date = 2019-03-27
 slug = "vim-and-latex"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "vim",
   "lsp",

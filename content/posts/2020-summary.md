@@ -5,7 +5,7 @@ title = "2020 总结"
 
 [taxonomies]
 tags = [ "summary", "yearly" ]
-categories = ["Post"]
+categories = ["Tech"]
 +++
 
 ## 0x01

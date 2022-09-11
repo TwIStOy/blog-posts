@@ -3,7 +3,7 @@ title = "C++11内存模型"
 date = 2018-03-19
 slug = "cpp11-memory-model"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "c++11",

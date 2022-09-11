@@ -4,7 +4,7 @@ date = 2018-01-07
 slug = "compile-time-const-array"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "c++11",

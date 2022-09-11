@@ -3,7 +3,7 @@ title = "模板实例化对成员函数的要求"
 date = 2015-09-01
 slug = "template-instantiation"
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [
   "c++",
   "c++11",

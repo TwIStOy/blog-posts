@@ -4,7 +4,7 @@ slug = "2015-provience-and-northeast-contest-summary"
 title = "2015 省赛、东北赛总结"
 
 [taxonomies]
-categories =  ["Post"]
+categories =  ["Tech"]
 tags = [ "acm" ]
 +++
 
