@@ -3,4 +3,4 @@
 	url = https://github.com/TwIStOy/zola-theme-mikoto.git
 [submodule "themes/simple-dev-blog"]
 	path = themes/simple-dev-blog
-	url = https://github.com/bennetthardwick/simple-dev-blog-zola-starter.git
+	url = https://github.com/TwIStOy/simple-dev-blog-zola-starter.git
