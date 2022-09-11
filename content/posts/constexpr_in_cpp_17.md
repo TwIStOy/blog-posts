@@ -190,7 +190,7 @@ if-constexpr 的出现我感觉不是为了解决什么特别的问题，而是�
 上面四个分别对应了一元右折叠、一元左折叠、二元右折叠、二元左折叠。
 ## Explain
 上面的四种折叠，分别会被展开成：
-```mathjax
+```
 \text{一元右折叠:} E_1 \  \text{op}\ (\dots\ \text{op}\ (E_{N-1}\ \text{op}\ E_N))\\
 \text{一元左折叠:} ((E_1\ \text{op}\ E_2)\ \text{op}\ \dots)\ \text{op}\ E_N)\\
 \text{二元右折叠:} E_1 \  \text{op}\ (\dots\ \text{op}\ (E_{N-1}\ \text{op}\ (E_N\ \text{op}\ I)))\\
