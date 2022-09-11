@@ -31,6 +31,7 @@ menus = [
     { link = "/categories", name = "CATEGORIES" },
     { link = "/tags", name = "TAGS" },
     { link = "/about", name = "ABOUT" },
+    { link = "/reading", name = "READING-LIST" },
     { link = "/rss.xml", name = "RSS" },
 ]
 
