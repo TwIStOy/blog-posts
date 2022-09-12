@@ -17,11 +17,11 @@ jobs:
           BUILD_DIR: .
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           REPOSITORY: TwIStOy/twistoy.github.io
-      - name: Install Zola Environments
-        run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
-      - name: Deploy to Tecent CloudBase
-        uses: TencentCloudBase/cloudbase-action@v2.0.1
-        with:
-          envId: ${{ secrets.CLOUDBASEENVID }}
-          secretId: ${{ secrets.CLOUDBASESECRETID }} 
-          secretKey: ${{ secrets.CLOUDBASESECRETKEY }}
+      # - name: Install Zola Environments
+      #   run: wget -q -O - "https://github.com/getzola/zola/releases/download/v0.12.0/zola-v0.12.0-x86_64-unknown-linux-gnu.tar.gz" | tar xzf - -C /tmp
+      # - name: Deploy to Tecent CloudBase
+      #   uses: TencentCloudBase/cloudbase-action@v2.0.1
+      #   with:
+      #     envId: ${{ secrets.CLOUDBASEENVID }}
+      #     secretId: ${{ secrets.CLOUDBASESECRETID }} 
+      #     secretKey: ${{ secrets.CLOUDBASESECRETKEY }}
